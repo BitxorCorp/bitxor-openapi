@@ -1861,7 +1861,7 @@ components:
     Address:
       type: string
       description: Address encoded using a 32-character set.
-      example: TADP6C2GVEG654OP5LZI32P2GYJSCMEGQBYB7QY
+      example: BXROYNABX4SO3IXW5Z4P5JSMIV4F64FI3QNM26I
     Amount:
       type: string
       description: Absolute amount. An amount of 123456789 (absolute) for a token with divisibility 6 means 123.456789 (relative).

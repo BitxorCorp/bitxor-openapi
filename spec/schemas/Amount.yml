@@ -1,4 +1,4 @@
 type: string
-description: Absolute amount. An amount of 123456789 (absolute) for a token with
-  divisibility 6 means 123.456789 (relative).
+description: Absolute amount. An amount of 12345678900 (absolute) for a token with
+  divisibility 8 means 123.45678900 (relative).
 example: "123456"

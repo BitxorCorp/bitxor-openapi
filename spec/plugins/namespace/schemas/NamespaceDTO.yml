@@ -1,0 +1,36 @@
+type: object
+required:
+  - version
+  - registrationType
+  - depth
+  - level0
+  - alias
+  - parentId
+  - ownerAddress
+  - startHeight
+  - endHeight
+properties:
+  version:
+    $ref: "../../../schemas/StateVersion.yml"
+  registrationType:
+    $ref: "./NamespaceRegistrationTypeEnum.yml"
+  depth:
+    type: integer
+    description: Level of the namespace.
+    example: 1
+  level0:
+    $ref: "../../../schemas/NamespaceId.yml"
+  level1:
+    $ref: "../../../schemas/NamespaceId.yml"
+  level2:
+    $ref: "../../../schemas/NamespaceId.yml"
+  alias:
+    $ref: "./AliasDTO.yml"
+  parentId:
+    $ref: "../../../schemas/NamespaceId.yml"
+  ownerAddress:
+    $ref: "../../../schemas/Address.yml"
+  startHeight:
+    $ref: "../../../schemas/Height.yml"
+  endHeight:
+    $ref: "../../../schemas/Height.yml"

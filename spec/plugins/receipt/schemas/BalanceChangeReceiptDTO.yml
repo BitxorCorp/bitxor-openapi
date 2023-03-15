@@ -1,0 +1,16 @@
+type: object
+description: Receipt stored when a state change modified an account balance.
+allOf:
+  - $ref: "./ReceiptDTO.yml"
+  - type: object
+    required:
+      - tokenId
+      - amount
+      - targetAddress
+    properties:
+      tokenId:
+        $ref: "../../../schemas/TokenId.yml"
+      amount:
+        $ref: "../../../schemas/Amount.yml"
+      targetAddress:
+        $ref: "../../../schemas/Address.yml"

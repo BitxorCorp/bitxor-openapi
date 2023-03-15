@@ -1,0 +1,16 @@
+type: object
+description: Transaction that triggered the receipt.
+required:
+  - primaryId
+  - secondaryId
+properties:
+  primaryId:
+    $ref: "../../../schemas/UInt32.yml"
+    description: Transaction index within the block.
+    example: 1
+  secondaryId:
+    $ref: "../../../schemas/UInt32.yml"
+    description: |
+      Transaction index within the aggregate transaction.
+      If the transaction is not an embedded transaction, then the secondary id is set to 0.
+    example: 0

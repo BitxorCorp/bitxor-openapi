@@ -1,0 +1,9 @@
+type: object
+required:
+  - key
+  - restriction
+properties:
+  key:
+    $ref: "../../../schemas/RestrictionKey.yml"
+  restriction:
+    $ref: "./TokenGlobalRestrictionEntryRestrictionDTO.yml"

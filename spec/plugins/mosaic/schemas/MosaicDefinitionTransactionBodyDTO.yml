@@ -1,0 +1,24 @@
+type: object
+required:
+  - id
+  - duration
+  - nonce
+  - flags
+  - divisibility
+properties:
+  id:
+    $ref: "../../../schemas/TokenId.yml"
+  duration:
+    $ref: "../../../schemas/BlockDuration.yml"
+  nonce:
+    $ref: "../../../schemas/UInt32.yml"
+    description: Random nonce used to generate the token id.
+    example: 0
+  flags:
+    $ref: "./TokenFlagsEnum.yml"
+  divisibility:
+    type : integer
+    description: |
+      Determines up to what decimal place the token can be divided.
+      Divisibility of 3 means that a token can be divided into smallest parts of 0.001 tokens.
+      The divisibility must be in the range of 0 and 6.

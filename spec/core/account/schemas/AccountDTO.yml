@@ -1,0 +1,41 @@
+type: object
+required:
+  - version
+  - address
+  - addressHeight
+  - publicKey
+  - publicKeyHeight
+  - accountType
+  - supplementalPublicKeys
+  - activityBuckets
+  - tokens
+  - importance
+  - importanceHeight
+properties:
+  version:
+    $ref: "../../../schemas/StateVersion.yml"
+  address:
+    $ref: "../../../schemas/Address.yml"
+  addressHeight:
+    $ref: "../../../schemas/Height.yml"
+  publicKey:
+    $ref: "../../../schemas/PublicKey.yml"
+  publicKeyHeight:
+    $ref: "../../../schemas/Height.yml"
+  accountType:
+    $ref: "./AccountTypeEnum.yml"
+  supplementalPublicKeys:
+    $ref: "./SupplementalPublicKeysDTO.yml"
+  activityBuckets:
+    type: array
+    items:
+      $ref: "./ActivityBucketDTO.yml"
+  tokens:
+    type: array
+    description: Token units owned.
+    items:
+      $ref: "../../../schemas/Token.yml"
+  importance:
+    $ref: "../../../schemas/Importance.yml"
+  importanceHeight:
+    $ref: "../../../schemas/Height.yml"

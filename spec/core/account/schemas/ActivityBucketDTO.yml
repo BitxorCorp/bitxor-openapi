@@ -1,0 +1,22 @@
+type: object
+required:
+  - startHeight
+  - totalFeesPaid
+  - beneficiaryCount
+  - rawScore
+description: |
+  Supplementary data stored for importance recalculation.
+  At each importance recalculation, existing buckets are shifted, the working bucket is finalized and a new working bucket is created.
+  Each bucket influences at most five importance recalculations.
+properties:
+  startHeight:
+    $ref: "../../../schemas/Height.yml"
+  totalFeesPaid:
+    $ref: "../../../schemas/Amount.yml"
+    description: Fees paid by the account for this bucket.
+  beneficiaryCount:
+    $ref: "../../../schemas/UInt32.yml"
+    description: Number of times the account has been a beneficiary for this bucket.
+  rawScore:
+    $ref: "../../../schemas/Importance.yml"
+    description: Importance score for this bucket. This is taken into account to calculate the latest account importance.

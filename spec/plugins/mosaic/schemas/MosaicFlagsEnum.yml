@@ -1,0 +1,7 @@
+type: integer
+description: |
+  - 0x00 (none) - No flags present.
+  - 0x01 (supplyMutable) - Token supports supply changes even when token owner owns partial supply.
+  - 0x02 (transferable) - Token supports transfers between arbitrary accounts. When not set, token can only be transferred to and from token owner.
+  - 0x04 (restrictable) - Token supports custom restrictions configured by token owner.
+  - 0x08 (revokable) - Token allows creator to revoke balances from another user.

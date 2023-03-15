@@ -1,0 +1,13 @@
+type: object
+description: Receipt stored when network currency tokens were created due to inflation.
+allOf:
+  - $ref: "./ReceiptDTO.yml"
+  - type: object
+    required:
+      - tokenId
+      - amount
+    properties:
+      tokenId:
+        $ref: "../../../schemas/TokenId.yml"
+      amount:
+        $ref: "../../../schemas/Amount.yml"

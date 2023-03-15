@@ -1,0 +1,24 @@
+tags:
+  - Restriction Token routes
+summary: Search token restrictions
+description: Returns an array of token restrictions.
+operationId: searchTokenRestrictions
+parameters:
+  - $ref: "../../../parameters/query/tokenId.yml"
+  - $ref: "../../../parameters/query/entryType.yml"
+  - $ref: "../../../parameters/query/targetAddress.yml"
+  - $ref: "../../../parameters/query/pageSize.yml"
+  - $ref: "../../../parameters/query/pageNumber.yml"
+  - $ref: "../../../parameters/query/offset.yml"
+  - $ref: "../../../parameters/query/order.yml"
+responses:
+  "200":
+    description: success
+    content:
+      application/json:
+        schema:
+          $ref: "../schemas/TokenRestrictionsPage.yml"
+  "404":
+    $ref: "../../../responses/ResourceNotFound.yml"
+  "409":
+    $ref: "../../../responses/InvalidArgument.yml"

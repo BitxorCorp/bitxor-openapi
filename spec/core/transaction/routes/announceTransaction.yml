@@ -1,0 +1,22 @@
+tags:
+  - Transaction routes
+summary: Announce a new transaction
+description: |
+  Announces a transaction to the network.
+  The [catbuffer library](https://github.com/bitxorcorp/catbuffer) defines the protocol to serialize and deserialize Bitxor entities.
+  Catbuffers are integrated into [Bitxor SDKs](https://bitxorcorp.github.io/sdk.html). 
+  It's recommended to use SDKs instead of calling the API endpoint directly to announce transactions.
+operationId: announceTransaction
+requestBody:
+  $ref: "../../../request_bodies/transactionPayload.yml"
+responses:
+  "202":
+    description: success
+    content:
+      application/json:
+        schema:
+          $ref: "../schemas/AnnounceTransactionInfoDTO.yml"
+  "400":
+    $ref: "../../../responses/InvalidContent.yml"
+  "409":
+    $ref: "../../../responses/InvalidArgument.yml"

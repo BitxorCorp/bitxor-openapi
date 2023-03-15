@@ -1,0 +1,18 @@
+type: object
+required:
+  - tokenId
+  - restrictionKey
+  - previousRestrictionValue
+  - newRestrictionValue
+  - targetAddress
+properties:
+  tokenId:
+    $ref: "../../../schemas/UnresolvedTokenId.yml"
+  restrictionKey:
+    $ref: "../../../schemas/RestrictionKey.yml"
+  previousRestrictionValue:
+    $ref: "../../../schemas/RestrictionValue.yml"
+  newRestrictionValue:
+    $ref: "../../../schemas/RestrictionValue.yml"
+  targetAddress:
+    $ref: "../../../schemas/UnresolvedAddress.yml"

@@ -1,0 +1,4 @@
+type: string
+format: hex
+description: 32 bytes voting public key.
+example: 4EDDA97C991A0BF44E0570B0BA0E0F7F1CE821A799726888734F28DDCCE8C591

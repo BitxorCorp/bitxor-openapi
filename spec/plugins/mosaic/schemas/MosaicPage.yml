@@ -1,0 +1,12 @@
+type: object
+required:
+  - data
+  - pagination
+properties:
+  data:
+    type: array
+    description: Array of tokens.
+    items:
+      $ref: "./TokenInfoDTO.yml"
+  pagination:
+    $ref: "../../../schemas/Pagination.yml"

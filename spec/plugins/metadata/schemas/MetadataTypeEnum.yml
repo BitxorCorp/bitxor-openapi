@@ -1,0 +1,10 @@
+type: integer
+enum:
+  - 0
+  - 1
+  - 2
+description: |
+  Metadata type:
+  * 0 - Account.
+  * 1 - Token.
+  * 2 - Namespace.

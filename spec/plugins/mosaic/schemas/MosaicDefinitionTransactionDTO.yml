@@ -1,0 +1,5 @@
+type: object
+description: Transaction to create a new token.
+allOf:
+  - $ref: "../../../core/transaction/schemas/TransactionDTO.yml"
+  - $ref: "./TokenDefinitionTransactionBodyDTO.yml"

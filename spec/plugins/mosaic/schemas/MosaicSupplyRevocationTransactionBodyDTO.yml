@@ -1,0 +1,12 @@
+type: object
+required:
+  - sourceAddress
+  - tokenId
+  - amount
+properties:
+  sourceAddress:
+    $ref: "../../../schemas/UnresolvedAddress.yml"
+  tokenId:
+    $ref: "../../../schemas/UnresolvedTokenId.yml"
+  amount:
+    $ref: "../../../schemas/Amount.yml"

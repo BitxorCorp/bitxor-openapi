@@ -1,0 +1,24 @@
+type: object
+required:
+  - tokenId
+  - referenceTokenId
+  - restrictionKey
+  - previousRestrictionValue
+  - newRestrictionValue
+  - previousRestrictionType
+  - newRestrictionType
+properties:
+  tokenId:
+    $ref: "../../../schemas/UnresolvedTokenId.yml"
+  referenceTokenId:
+    $ref: "../../../schemas/UnresolvedTokenId.yml"
+  restrictionKey:
+    $ref: "../../../schemas/RestrictionKey.yml"
+  previousRestrictionValue:
+    $ref: "../../../schemas/RestrictionValue.yml"
+  newRestrictionValue:
+    $ref: "../../../schemas/RestrictionValue.yml"
+  previousRestrictionType:
+    $ref: "./TokenRestrictionTypeEnum.yml"
+  newRestrictionType:
+    $ref: "./TokenRestrictionTypeEnum.yml"

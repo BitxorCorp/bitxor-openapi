@@ -1,0 +1,28 @@
+openapi: 3.0.2
+info:
+  "$ref": "./info.yml"
+tags:
+  "$ref": "./tags.yml"
+paths:
+  "$ref": "./routes.yml"
+externalDocs:
+  description: Bitxor Technical Documentation
+  url: https://docs.bitxor.org/
+servers:
+  - url: https://alfa.mainnet.bitxor.network:3001
+    description: A MAINNET node run by Bitxor Group
+  - url: https://genesis.bitxor.org:3001
+    description: A MAINNET node run by Bitxor Group
+  - url: http://localhost:3000
+    description: Local development
+  - url: https://testnet.bitxor.org:3001
+    description: A TESTNET node run by Bitxor Group
+components:
+  parameters:
+    "$ref": "./parameters/_index.yml"
+  requestBodies:
+    "$ref": "./request_bodies/_index.yml"
+  schemas:
+    $ref: "./schemas/_index.yml"
+  responses:
+    $ref: "./responses/_index.yml"

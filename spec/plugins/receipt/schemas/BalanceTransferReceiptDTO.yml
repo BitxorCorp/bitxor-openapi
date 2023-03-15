@@ -1,0 +1,19 @@
+type: object
+description: Receipt stored when a state change that triggered a token transfer.
+allOf:
+  - $ref: "./ReceiptDTO.yml"
+  - type: object
+    required:
+      - tokenId
+      - amount
+      - senderAddress
+      - recipientAddress
+    properties:
+      tokenId:
+        $ref: "../../../schemas/TokenId.yml"
+      amount:
+        $ref: "../../../schemas/Amount.yml"
+      senderAddress:
+        $ref: "../../../schemas/Address.yml"
+      recipientAddress:
+        $ref: "../../../schemas/Address.yml"

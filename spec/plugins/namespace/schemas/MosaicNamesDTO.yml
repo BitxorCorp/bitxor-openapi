@@ -1,0 +1,14 @@
+type: object
+required:
+  - tokenId
+  - names
+properties:
+  tokenId:
+    $ref: "../../../schemas/TokenId.yml"
+  names:
+    type: array
+    description: Token linked namespace names.
+    example:
+      - bitxor.xym
+    items:
+      type: string

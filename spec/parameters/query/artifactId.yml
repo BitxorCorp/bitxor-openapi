@@ -1,0 +1,5 @@
+name: artifactId
+in: query
+description: Token or namespace identifier
+schema:
+  type: string

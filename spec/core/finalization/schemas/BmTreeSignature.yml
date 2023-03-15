@@ -1,0 +1,9 @@
+type: object
+required:
+  - root
+  - bottom
+properties:
+  root:
+    $ref: "./ParentPublicKeySignaturePair.yml"
+  bottom:
+    $ref: "./ParentPublicKeySignaturePair.yml"

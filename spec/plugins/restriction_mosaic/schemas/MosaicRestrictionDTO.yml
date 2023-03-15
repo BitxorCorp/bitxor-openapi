@@ -1,0 +1,5 @@
+type: object
+description: Generic Token Restriction
+anyOf:
+  - $ref: "./TokenAddressRestrictionDTO.yml"
+  - $ref: "./TokenGlobalRestrictionDTO.yml"

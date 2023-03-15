@@ -1,0 +1,13 @@
+type: object
+required:
+  - name
+  - description
+properties:
+  name:
+    type: string
+    description: Network name.
+    example: testnet
+  description:
+    type: string
+    description: A short text describing the network.
+    example: bitxorcore public test network

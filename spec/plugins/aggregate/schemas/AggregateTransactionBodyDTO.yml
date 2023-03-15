@@ -1,0 +1,12 @@
+type: object
+required:
+  - transactionsHash
+  - cosignatures
+properties:
+  transactionsHash:
+    $ref: "../../../schemas/Hash256.yml"
+  cosignatures:
+    type: array
+    description: Array of transaction cosignatures.
+    items:
+      $ref: "./CosignatureDTO.yml"

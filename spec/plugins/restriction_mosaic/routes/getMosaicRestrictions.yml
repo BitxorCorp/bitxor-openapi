@@ -1,0 +1,18 @@
+tags:
+  - Restriction Token routes
+summary: Get the token restrictions
+description: Returns the token restrictions for a composite hash.
+operationId: getTokenRestrictions
+parameters:
+  - $ref: "../../../parameters/path/compositeHash.yml"
+responses:
+  "200":
+    description: success
+    content:
+      application/json:
+        schema:
+          $ref: "../schemas/TokenRestrictionDTO.yml"
+  "404":
+    $ref: "../../../responses/ResourceNotFound.yml"
+  "409":
+    $ref: "../../../responses/InvalidArgument.yml"

@@ -1,0 +1,32 @@
+type: object
+required:
+  - version
+  - accountAddress
+  - minApproval
+  - minRemoval
+  - cosignatoryAddresses
+  - multisigAddresses
+properties:
+  version:
+    $ref: "../../../schemas/StateVersion.yml"
+  accountAddress:
+    $ref: "../../../schemas/Address.yml"
+  minApproval:
+    $ref: "../../../schemas/UInt32.yml"
+    description: Number of signatures needed to approve a transaction.
+    example: 2
+  minRemoval:
+    description: Number of signatures needed to remove a cosignatory.
+    $ref: "../../../schemas/UInt32.yml"
+    example: 1
+  cosignatoryAddresses:
+    type: array
+    description: Addresses of the cosignatory accounts.
+    items:
+      $ref: "../../../schemas/Address.yml"
+  multisigAddresses:
+    type: array
+    description: Multisig accounts where the account is cosignatory.
+    example:
+    items:
+      $ref: "../../../schemas/Address.yml"

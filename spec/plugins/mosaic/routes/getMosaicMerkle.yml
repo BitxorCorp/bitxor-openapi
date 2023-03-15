@@ -1,0 +1,18 @@
+tags:
+  - Token routes
+summary: Get token merkle information
+description: Gets the token definition merkle for a given token identifier.
+operationId: getTokenMerkle
+parameters:
+  - $ref: "../../../parameters/path/tokenId.yml"
+responses:
+  "200":
+    description: success
+    content:
+      application/json:
+        schema:
+          $ref: "../../../schemas/MerkleStateInfoDTO.yml"
+  "404":
+    $ref: "../../../responses/ResourceNotFound.yml"
+  "409":
+    $ref: "../../../responses/InvalidArgument.yml"

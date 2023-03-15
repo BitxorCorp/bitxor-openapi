@@ -1,0 +1,21 @@
+tags:
+  - Token routes
+summary: Get tokens information for an array of tokens
+description: Gets an array of token definition.
+operationId: getTokens
+requestBody:
+  $ref: "../../../request_bodies/tokenIds.yml"
+responses:
+  "200":
+    description: success
+    content:
+      application/json:
+        schema:
+          type: array
+          description: Array of tokens information.
+          items:
+            $ref: "../schemas/TokenInfoDTO.yml"
+  "400":
+    $ref : "../../../responses/InvalidContent.yml"
+  "409":
+    $ref : "../../../responses/InvalidArgument.yml"

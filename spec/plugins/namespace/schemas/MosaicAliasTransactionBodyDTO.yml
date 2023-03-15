@@ -1,0 +1,12 @@
+type: object
+required:
+  - namespaceId
+  - tokenId
+  - aliasAction
+properties:
+  namespaceId:
+    $ref: "../../../schemas/NamespaceId.yml"
+  tokenId:
+    $ref: "../../../schemas/TokenId.yml"
+  aliasAction:
+    $ref: "./AliasActionEnum.yml"

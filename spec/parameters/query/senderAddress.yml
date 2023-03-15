@@ -1,0 +1,5 @@
+name: senderAddress
+in: query
+description: Filter by address sending tokens.
+schema:
+  $ref: "../../schemas/Address.yml"

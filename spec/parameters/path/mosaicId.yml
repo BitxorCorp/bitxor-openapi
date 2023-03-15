@@ -1,0 +1,7 @@
+name: tokenId
+in: path
+description: Token identifier.
+required: true
+schema:
+  $ref: "../../schemas/TokenId.yml"
+

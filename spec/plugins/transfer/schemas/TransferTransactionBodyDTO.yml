@@ -1,0 +1,16 @@
+type: object
+required:
+  - recipientAddress
+  - tokens
+properties:
+  recipientAddress:
+    $ref: "../../../schemas/UnresolvedAddress.yml"
+  tokens:
+    type: array
+    description: |
+      Array of tokens sent to the recipient.
+    items:
+      $ref: "../../../schemas/UnresolvedToken.yml"
+  message:
+    type: string
+    description: Transfer transaction message

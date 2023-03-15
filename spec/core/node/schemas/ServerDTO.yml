@@ -1,0 +1,16 @@
+type: object
+required:
+  - restVersion
+  - sdkVersion
+  - deployment
+properties:
+  restVersion:
+    type: string
+    example: 1.0.14
+    description: bitxorcore-rest component version.
+  sdkVersion:
+    type: string
+    example: 0.7.14
+    description: bitxorcore-sdk component version.
+  deployment:
+    $ref: "./DeploymentDTO.yml"

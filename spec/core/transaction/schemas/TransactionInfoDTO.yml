@@ -1,0 +1,63 @@
+type: object
+required:
+  - id
+  - meta
+  - transaction
+properties:
+  id:
+    type: string
+    description: Internal resource identifier.
+  meta:
+    anyOf:
+      - $ref: "./TransactionMetaDTO.yml"
+      - $ref: "./EmbeddedTransactionMetaDTO.yml"
+  transaction:
+    anyOf:
+      - $ref: "../../../plugins/account_link/schemas/AccountKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/account_link/schemas/EmbeddedAccountKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/account_link/schemas/NodeKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/account_link/schemas/EmbeddedNodeKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/coresystem/schemas/VrfKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/coresystem/schemas/EmbeddedVrfKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/coresystem/schemas/VotingKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/coresystem/schemas/EmbeddedVotingKeyLinkTransactionDTO.yml"
+      - $ref: "../../../plugins/aggregate/schemas/AggregateTransactionDTO.yml"
+      - $ref: "../../../plugins/aggregate/schemas/AggregateTransactionExtendedDTO.yml"
+      - $ref: "../../../plugins/lock_hash/schemas/HashLockTransactionDTO.yml"
+      - $ref: "../../../plugins/lock_hash/schemas/EmbeddedHashLockTransactionDTO.yml"
+      - $ref: "../../../plugins/lock_secret/schemas/SecretLockTransactionDTO.yml"
+      - $ref: "../../../plugins/lock_secret/schemas/EmbeddedSecretLockTransactionDTO.yml"
+      - $ref: "../../../plugins/lock_secret/schemas/SecretProofTransactionDTO.yml"
+      - $ref: "../../../plugins/lock_secret/schemas/EmbeddedSecretProofTransactionDTO.yml"
+      - $ref: "../../../plugins/metadata/schemas/AccountMetadataTransactionDTO.yml"
+      - $ref: "../../../plugins/metadata/schemas/EmbeddedAccountMetadataTransactionDTO.yml"
+      - $ref: "../../../plugins/metadata/schemas/TokenMetadataTransactionDTO.yml"
+      - $ref: "../../../plugins/metadata/schemas/EmbeddedTokenMetadataTransactionDTO.yml"
+      - $ref: "../../../plugins/metadata/schemas/NamespaceMetadataTransactionDTO.yml"
+      - $ref: "../../../plugins/metadata/schemas/EmbeddedNamespaceMetadataTransactionDTO.yml"
+      - $ref: "../../../plugins/token/schemas/TokenDefinitionTransactionDTO.yml"
+      - $ref: "../../../plugins/token/schemas/EmbeddedTokenDefinitionTransactionDTO.yml"
+      - $ref: "../../../plugins/token/schemas/TokenSupplyChangeTransactionDTO.yml"
+      - $ref: "../../../plugins/token/schemas/EmbeddedTokenSupplyChangeTransactionDTO.yml"
+      - $ref: "../../../plugins/token/schemas/TokenSupplyRevocationTransactionDTO.yml"
+      - $ref: "../../../plugins/token/schemas/EmbeddedTokenSupplyRevocationTransactionDTO.yml"
+      - $ref: "../../../plugins/namespace/schemas/NamespaceRegistrationTransactionDTO.yml"
+      - $ref: "../../../plugins/namespace/schemas/EmbeddedNamespaceRegistrationTransactionDTO.yml"
+      - $ref: "../../../plugins/namespace/schemas/AddressAliasTransactionDTO.yml"
+      - $ref: "../../../plugins/namespace/schemas/EmbeddedAddressAliasTransactionDTO.yml"
+      - $ref: "../../../plugins/namespace/schemas/TokenAliasTransactionDTO.yml"
+      - $ref: "../../../plugins/namespace/schemas/EmbeddedTokenAliasTransactionDTO.yml"
+      - $ref: "../../../plugins/multisig/schemas/MultisigAccountModificationTransactionDTO.yml"
+      - $ref: "../../../plugins/multisig/schemas/EmbeddedMultisigAccountModificationTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_account/schemas/AccountAddressRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_account/schemas/EmbeddedAccountAddressRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_account/schemas/AccountTokenRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_account/schemas/EmbeddedAccountTokenRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_account/schemas/AccountOperationRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_account/schemas/EmbeddedAccountOperationRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_token/schemas/TokenGlobalRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_token/schemas/EmbeddedTokenGlobalRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_token/schemas/TokenAddressRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/restriction_token/schemas/EmbeddedTokenAddressRestrictionTransactionDTO.yml"
+      - $ref: "../../../plugins/transfer/schemas/TransferTransactionDTO.yml"
+      - $ref: "../../../plugins/transfer/schemas/EmbeddedTransferTransactionDTO.yml"

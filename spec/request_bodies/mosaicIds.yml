@@ -1,0 +1,5 @@
+content:
+  application/json:
+    schema:
+      $ref: "./schemas/tokenIds.yml"
+required: true

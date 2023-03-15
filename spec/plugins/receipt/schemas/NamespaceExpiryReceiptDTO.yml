@@ -1,0 +1,10 @@
+type: object
+description: Receipt stored when a namespace expires.
+allOf:
+  - $ref: "./ReceiptDTO.yml"
+  - type: object
+    required:
+      - artifactId
+    properties:
+      artifactId:
+        $ref: "../../../schemas/NamespaceId.yml"

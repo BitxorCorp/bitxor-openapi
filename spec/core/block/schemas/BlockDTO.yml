@@ -1,0 +1,44 @@
+type: object
+allOf:
+  - $ref: "../../entity/schemas/SizePrefixedEntityDTO.yml"
+  - $ref: "../../entity/schemas/VerifiableEntityDTO.yml"
+  - $ref: "../../entity/schemas/EntityDTO.yml"
+  - type: object
+    required:
+      - height
+      - timestamp
+      - difficulty
+      - proofGamma
+      - proofVerificationHash
+      - proofScalar
+      - previousBlockHash
+      - transactionsHash
+      - receiptsHash
+      - stateHash
+      - beneficiaryAddress
+      - feeMultiplier
+    properties:
+      height:
+        $ref: "../../../schemas/Height.yml"
+      timestamp:
+        $ref: "../../../schemas/Timestamp.yml"
+      difficulty:
+        $ref: "../../../schemas/Difficulty.yml"
+      proofGamma:
+        $ref: "../../../schemas/ProofGamma.yml"
+      proofVerificationHash:
+        $ref: "../../../schemas/ProofVerificationHash.yml"
+      proofScalar:
+        $ref: "../../../schemas/ProofScalar.yml"
+      previousBlockHash:
+        $ref: "../../../schemas/Hash256.yml"
+      transactionsHash:
+        $ref: "../../../schemas/Hash256.yml"
+      receiptsHash:
+        $ref: "../../../schemas/Hash256.yml"
+      stateHash:
+        $ref: "../../../schemas/Hash256.yml"
+      beneficiaryAddress:
+        $ref: "../../../schemas/Address.yml"
+      feeMultiplier:
+        $ref: "../../../schemas/BlockFeeMultiplier.yml"

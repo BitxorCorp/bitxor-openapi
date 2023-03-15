@@ -1,0 +1,14 @@
+type: object
+required:
+  - data
+  - pagination
+properties:
+  data:
+    type: array
+    description: Array of token restrictions.
+    items:
+      anyOf:
+      - $ref: "./TokenAddressRestrictionDTO.yml"
+      - $ref: "./TokenGlobalRestrictionDTO.yml"
+  pagination:
+    $ref: "../../../schemas/Pagination.yml"

@@ -1,0 +1,29 @@
+{
+  "name": "bitxor-openapi",
+  "version": "1.0.3",
+  "description": "OpenAPI Specification of bitxorcore-rest",
+  "main": "index.js",
+  "scripts": {
+    "test": "swagger-cli validate _build/openapi3.yml",
+    "build": "swagger-cli bundle ./spec/openapi.yml --outfile _build/openapi3.yml --type yaml",
+    "postman": "openapi2postmanv2 -s _build/openapi3.yml -o _build/postman.json -p",
+    "version": "echo $npm_package_version",
+    "version:prepare": "mkdir _build/v$npm_package_version && cp -r _build/template/. _build/v$npm_package_version",
+    "version:pack": "cp _build/openapi3.yml _build/postman.json _build/v$npm_package_version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BitxorCorp/bitxor-openapi.git"
+  },
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/BitxorCorp/bitxor-openapi/issues"
+  },
+  "homepage": "https://github.com/BitxorCorp/bitxor-openapi#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "openapi-to-postmanv2": "^1.2.6",
+    "swagger-cli": "^4.0.4",
+    "yaml-cli": "^1.1.8"
+  }
+}

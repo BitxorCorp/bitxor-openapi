@@ -1,0 +1,12 @@
+type: object
+required:
+  - referenceTokenId
+  - restrictionValue
+  - restrictionType
+properties:
+  referenceTokenId:
+    $ref: "../../../schemas/TokenId.yml"
+  restrictionValue:
+    $ref: "../../../schemas/RestrictionValue.yml"
+  restrictionType:
+    $ref: "./TokenRestrictionTypeEnum.yml"

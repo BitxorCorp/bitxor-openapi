@@ -1,0 +1,38 @@
+type: object
+required:
+  - version
+  - publicKey
+  - networkGenerationHashSeed
+  - roles
+  - port
+  - networkIdentifier
+  - friendlyName
+  - host
+properties:
+  version:
+    type: integer
+    description: Version of the application.
+    example: 0
+  publicKey:
+    $ref: "../../../schemas/PublicKey.yml"
+  networkGenerationHashSeed:
+    $ref: "../../../schemas/Hash256.yml"
+  roles:
+    $ref: "./RolesTypeEnum.yml"
+  port:
+    type: integer
+    description: Port used for the communication.
+    example: 7900
+  networkIdentifier:
+    type: integer
+    example: 144
+  friendlyName:
+    type: string
+    description: Node friendly name.
+    example: api-node-0
+  host:
+    type: string
+    description: Node IP address.
+    example: 127.0.0.1
+  nodePublicKey:
+    $ref: "../../../schemas/PublicKey.yml"

@@ -1,0 +1,9 @@
+type: object
+required:
+  - tokenNames
+properties:
+  tokenNames:
+    type: array
+    description: Array of token names.
+    items:
+      $ref: "./TokenNamesDTO.yml"

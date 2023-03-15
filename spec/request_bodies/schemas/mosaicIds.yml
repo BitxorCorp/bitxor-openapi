@@ -1,0 +1,7 @@
+type: object
+properties:
+  tokenIds:
+    type: array
+    description: Array of token identifiers.
+    items:
+      $ref: "../../schemas/TokenId.yml"

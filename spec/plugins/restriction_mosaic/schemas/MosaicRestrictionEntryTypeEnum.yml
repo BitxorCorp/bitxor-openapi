@@ -1,0 +1,7 @@
+type: integer
+enum:
+  - 0
+  - 1
+description: |
+  - 0 - Token address restriction.
+  - 1 - Token global restriction.

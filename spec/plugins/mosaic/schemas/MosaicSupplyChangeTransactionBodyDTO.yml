@@ -1,0 +1,12 @@
+type: object
+required:
+  - tokenId
+  - delta
+  - action
+properties:
+  tokenId:
+    $ref: "../../../schemas/UnresolvedTokenId.yml"
+  delta:
+    $ref: "../../../schemas/Amount.yml"
+  action:
+    $ref: "./TokenSupplyChangeActionEnum.yml"

@@ -1,0 +1,30 @@
+type: object
+required:
+  - version
+  - compositeHash
+  - sourceAddress
+  - targetAddress
+  - scopedMetadataKey
+  - metadataType
+  - value
+properties:
+  version:
+    $ref: "../../../schemas/StateVersion.yml"
+  compositeHash:
+    $ref: "../../../schemas/Hash256.yml"
+  sourceAddress:
+    $ref: "../../../schemas/Address.yml"
+  targetAddress:
+    $ref: "../../../schemas/Address.yml"
+  scopedMetadataKey:
+    $ref: "../../../schemas/MetadataKey.yml"
+  targetId:
+    anyOf:
+      - $ref: "../../../schemas/TokenId.yml"
+      - $ref: "../../../schemas/NamespaceId.yml"
+  metadataType:
+    $ref: "./MetadataTypeEnum.yml"
+  value:
+    type: string
+    format: hex
+    description: Metadata value.

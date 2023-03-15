@@ -1,0 +1,6 @@
+type: object
+properties:
+  sendTimestamp:
+    $ref: "../../../schemas/Timestamp.yml"
+  receiveTimestamp:
+    $ref: "../../../schemas/Timestamp.yml"

@@ -1,0 +1,18 @@
+tags:
+  - Token routes
+summary: Get token information
+description: Gets the token definition for a given token identifier.
+operationId: getToken
+parameters:
+  - $ref: "../../../parameters/path/tokenId.yml"
+responses:
+  "200":
+    description: success
+    content:
+      application/json:
+        schema:
+          $ref: "../schemas/TokenInfoDTO.yml"
+  "404":
+    $ref: "../../../responses/ResourceNotFound.yml"
+  "409":
+    $ref: "../../../responses/InvalidArgument.yml"

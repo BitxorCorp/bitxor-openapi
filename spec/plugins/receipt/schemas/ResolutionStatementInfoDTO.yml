@@ -1,0 +1,16 @@
+type: object
+required:
+  - id
+  - meta
+  - statement
+description: |
+  A resolution statement keeps the relation between a namespace alias used in a transaction
+  and the real address or tokenId.
+properties:
+  id:
+    type: string
+    description: Internal resource identifier.
+  meta:
+    $ref: "./StatementMetaDTO.yml"
+  statement:
+    $ref: "./ResolutionStatementDTO.yml"

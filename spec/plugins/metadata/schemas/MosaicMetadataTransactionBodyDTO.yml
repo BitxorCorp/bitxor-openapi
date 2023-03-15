@@ -1,0 +1,23 @@
+type: object
+required:
+  - targetAddress
+  - scopedMetadataKey
+  - targetTokenId
+  - valueSizeDelta
+  - valueSize
+  - value
+properties:
+  targetAddress:
+    $ref: "../../../schemas/UnresolvedAddress.yml"
+  scopedMetadataKey:
+    $ref: "../../../schemas/MetadataKey.yml"
+  targetTokenId:
+    $ref: "../../../schemas/UnresolvedTokenId.yml"
+  valueSizeDelta:
+    type: integer
+    description: Change in value size in bytes.
+  valueSize:
+    $ref: "../../../schemas/UInt32.yml"
+    description: Value size in bytes.
+  value:
+    $ref: "../../../schemas/MetadataValue.yml"

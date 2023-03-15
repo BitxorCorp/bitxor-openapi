@@ -1,0 +1,6 @@
+name: tokenId
+in: query
+description: Filter by token identifier.
+schema:
+  $ref: "../../schemas/TokenId.yml"
+

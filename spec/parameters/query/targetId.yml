@@ -5,4 +5,4 @@ schema:
   # anyOf: TokenId or NamespaceId
   type: string
   format: hex
-  example: 0DC67FBE1CAD29E3
+  example: 3D1FE6EDC7F9611E

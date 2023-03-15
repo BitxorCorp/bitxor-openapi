@@ -1769,7 +1769,7 @@ components:
       schema:
         type: string
         format: hex
-        example: 0DC67FBE1CAD29E3
+        example: 3D1FE6EDC7F9611E
     targetAddressQuery:
       name: targetAddress
       in: query
@@ -1922,7 +1922,7 @@ components:
       type: string
       format: hex
       description: 'Metadata key scoped to source, target and type expressed.'
-      example: 0DC67FBE1CAD29E3
+      example: 3D1FE6EDC7F9611E
     MetadataValue:
       type: string
       format: hex
@@ -1941,7 +1941,7 @@ components:
       type: string
       format: hex
       description: Token identifier.
-      example: 0DC67FBE1CAD29E3
+      example: 3D1FE6EDC7F9611E
     Token:
       type: object
       required:
@@ -2067,7 +2067,7 @@ components:
       type: string
       format: hex
       description: Restriction key.
-      example: 0DC67FBE1CAD29E3
+      example: 3D1FE6EDC7F9611E
     NamespaceId:
       type: string
       format: hex
